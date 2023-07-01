@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    background-color: var(--brn);
+    width: 95%;
+    margin: auto;
+}
+
+:root {
+
+    --brn: brown;
+    --red: red;
+    --black: black;
+}
+
+nav ul li {
+    display: block;
+    display: flex;
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+
+
+}
