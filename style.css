@@ -3,6 +3,7 @@
     background-color: var(--brn);
     width: 95%;
     margin: auto;
+    padding: 0%;
 }
 
 :root {
@@ -12,14 +13,25 @@
     --black: black;
 }
 
+header {
+    text-align: center;
+    background-color: var(--red);
+}
+
 nav ul li {
+
     display: block;
-    display: flex;
+    display: inline;
 }
 
 img {
     width: 5rem;
     height: 5rem;
+}
 
-
+footer ul li {
+    display: block;
+    display: inline;
+    margin: auto;
+    background-color: var(--red);
 }
