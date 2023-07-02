@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
-    background: var(--brn);
+    
     width: 95%;
     margin: auto;
     padding: 0%;
+}
+body{
+    background-color: var(--brn);
 }
 
 :root {
@@ -18,16 +21,20 @@ header  h1{
     background: var(--red);
 }
 
-li {
+nav ul li{
     border: 2px solid black;
     display: inline;
     justify-content: center;
-    
-
+    background: var(--red);
 }
 
+table tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:100%;
+}
 
-section h2 article p img{
+section {
     background-color: var(--red);
     margin: 1rem;
     border: 2px solid black;
@@ -39,10 +46,12 @@ img {
     height: 5rem;
 }
 
-footer ul li {
+
+  
+
+footer ul li{
     display: block;
     display: inline;
-    margin: auto;
     background: var(--red);
     border: 2px solid black;
 }
