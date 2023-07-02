@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    background-color: var(--brn);
+    background: var(--brn);
     width: 95%;
     margin: auto;
     padding: 0%;
@@ -13,16 +13,26 @@
     --black: black;
 }
 
-header {
+header  h1{
     text-align: center;
-    background-color: var(--red);
+    background: var(--red);
 }
 
-nav ul li {
-
-    display: block;
+li {
+    border: 2px solid black;
     display: inline;
+    justify-content: center;
+    
+
 }
+
+
+section h2 article p img{
+    background-color: var(--red);
+    margin: 1rem;
+    border: 2px solid black;
+}
+
 
 img {
     width: 5rem;
@@ -33,5 +43,6 @@ footer ul li {
     display: block;
     display: inline;
     margin: auto;
-    background-color: var(--red);
+    background: var(--red);
+    border: 2px solid black;
 }
