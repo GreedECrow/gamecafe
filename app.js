@@ -1,6 +1,13 @@
 "use strict"
 console.log("Boom Stick!!")
 
-const hours = ["5pm", "6pm", "7pm", "8pm", "9pm", "10pm", "11pm"]
+const hours = ["5pm-7pm", "7pm-9pm", "9pm-11pm"]
 
-function GameNight(game, time, seats)
+let chairs = 0;
+let maxChairs = 5;
+
+const cells = table.getElementsByTagName("td");
+
+for ( i=0; i  < chairs; i++){
+console.log("charirs")
+}
