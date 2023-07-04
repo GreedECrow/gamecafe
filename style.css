@@ -25,7 +25,6 @@ header  h1{
 nav ul li{
     border: 2px solid black;
     display: inline;
-    justify-content: center;
     background: var(--red);
 }
 
