@@ -1,3 +1,6 @@
+"use strict"
+console.log("first")
+
 const container = document.querySelector(".container");
 const seats = document.querySelectorAll(".row .seat:not(.occupied");
 const count = document.getElementById("count");
@@ -6,6 +9,7 @@ const movieSelect = document.getElementById("movie");
 
 populateUI();
 let ticketPrice = +movieSelect.value;
+console.log(typeof ticketPrice);
 
 function setMovieData(movieIndex, moviePrice) {
     localStorage.setItem("selectedMovieIndex", movieIndex);
