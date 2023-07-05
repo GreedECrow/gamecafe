@@ -20,6 +20,7 @@ body{
 header  h1{
     text-align: center;
     background: var(--red);
+    border: 2px solid black;
 }
 
 nav{
@@ -49,11 +50,13 @@ img {
 }
 
 
-  
+footer{
+    background-color: var(--red);
+    border: 2px solid black;
+}
 
 footer ul li{
     display: block;
     display: inline;
-    background: var(--red);
     border: 2px solid black;
 }
