@@ -65,10 +65,18 @@ container.addEventListener("click", (e) => {
 
 updateSeletedCount();
 
-function CharacterSheet(name, role, job) {
+
+
+
+
+
+
+
+function CharacterSheet(name, role, job, imageUrl) {
     this.name = name;
     this.role = role;
     this.job = job;
+    this.imageUrl = imageUrl;
     this.render();
 }
 
@@ -82,13 +90,25 @@ CharacterSheet.prototype.render = function () {
     h3.textContent = this.name;
     article.appendChild(h3);
 
-    const ul = document.createElement("ul");
-    article.appendChild(ul);
-
     const p = document.createElement("p");
-    p.textContent = this.role, (br), this.job;
+    p.textContent = this.role;
     article.appendChild(p);
 
+    const para = document.createElement("p");
+    para.textContent = this.job;
+    article.appendChild(para);
 
+    const image = document.createElement("img");
+    image.setAttribute("src", this.imageUrl);
+    image.setAttribute("alt", `${this.name} profile shot.`);
+    article.appendChild(image);
 
 }
+
+const ladyviolent = new CharacterSheet("Lady Violent", "Physical DPS", "Punch a dragon in the face.", "assets/monk.jpeg");
+
+const bobertsonmire = new CharacterSheet("Bobertsonmire", "Ranged DPS", "Black Mage.", "assets/blackmage.jpg");
+
+const tankgirl = new CharacterSheet("Tank Girl", "Tank", "Damage Sponge.", "assets/tank.jpg");
+
+const cokezero = new CharacterSheet("Coke Zero", "Healer", "Rubs it better.", "assets/heals.jpg");
