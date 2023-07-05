@@ -1,13 +1,15 @@
 * {
     box-sizing: border-box;
-    
-    
     margin: auto;
     padding: 0%;
 }
-body{
-    background-color: var(--brn);
+
+body {
+    
+    background-image: url(assets/bg2.jpg);
+    background-repeat: repeat;
     width: 95%;
+
 }
 
 :root {
@@ -17,46 +19,58 @@ body{
     --black: black;
 }
 
-header  h1{
+header h1 {
     text-align: center;
-    background: var(--red);
-    border: 2px solid black;
+    
 }
 
-nav{
+h2 {
+    text-align: center;
+}
+
+nav {
     display: flex;
+    margin: 1rem;
 }
 
-nav ul li{
-    border: 2px solid black;
+nav ul li {
+    margin: 2rem;
     display: inline;
-    background: var(--red);
+    
+    margin: auto;
 }
 
-table tr td{
+table tr td {
     border: 1px solid black;
 }
 
 section {
-    background-color: var(--red);
     margin: 1rem;
-    border: 2px solid black;
+
 }
 
+section article{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
 
 img {
     width: 5rem;
     height: 5rem;
+    margin: 1rem;
 }
 
+.drop {
+    background: #ff00007b;
+    border-radius: 10px;
+    box-shadow: -10px 15px 5px #300000c4, -40px 30px 32px #3b00009d, inset -6px 6px 10px #e20000c8,
+        inset 2px 6px 10px #e10000eb, inset 20px -20px 22px rgb(255, 0, 0), inset 40px -40px 44px #76000087;
 
-footer{
+}
+
+footer {
     background-color: var(--red);
     border: 2px solid black;
 }
 
-footer ul li{
-    display: block;
-    display: inline;
-    border: 2px solid black;
-}
