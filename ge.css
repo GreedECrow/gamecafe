@@ -3,7 +3,7 @@
 }
 
 body {
-    display: flex;
+
     flex-direction: column;
     color: rgb(0, 0, 0);
     align-items: center;
@@ -13,18 +13,38 @@ body {
 
 .seat {
     background-color: rgb(0, 255, 4);
-    height: 12px;
-    width: 15px;
-    margin: 3px;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border: 1px solid black;
+}
+
+.tab {
+    background-color: rgb(132, 0, 255);
+    height: 30px;
+    width: 140px;
+    margin: 3px;
+    border: 1px solid black;
+
 }
 
 .row {
     display: flex;
 }
 
+.table {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .game-container {
+    display: flex;
     margin: 20px 0;
     padding: 5px;
 }
@@ -41,23 +61,33 @@ body {
 }
 
 .game-list {
+    list-style-type: none;
     display: flex;
 }
 
+
 .seat.selected {
-    background-color: aqua;
+    background-color: rgb(255, 251, 0);
 }
 
 .seat.occupied {
     background-color: white;
 }
 
-.seat:nth-of-type(2) {
-    margin-right: 18px;
+.seat:nth-of-type(3) {
+    margin-right: 50px;
 }
 
-.seat:nth-last-of-type(2) {
-    margin-left: 18px;
+.seat:nth-last-of-type(3) {
+    margin-left: 50px;
+}
+
+.tab:nth-of-type(1) {
+    margin-right: 50px;
+}
+
+.tab:nth-last-of-type(1) {
+    margin-left: 48px;
 }
 
 .seat:not(.occupied):hover {
@@ -69,6 +99,7 @@ body {
     cursor: default;
     transform: scale(1);
 }
+
 
 .showcase {
     background-color: rgba(0, 0, 0, 0.1);
@@ -107,6 +138,7 @@ body {
 
 p.text {
     margin: 5px;
+    text-align: center;
 }
 
 p.text span {
@@ -123,11 +155,10 @@ img {
 }
 
 section article {
-    background-color: cornflowerblue;
-    border: 1px solid darkblue;
-    max-width: 320px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 300px;
+    margin: 100px;
+    padding-top: 20px;
 }
