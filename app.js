@@ -105,10 +105,10 @@ CharacterSheet.prototype.render = function () {
 
 }
 
-const ladyviolent = new CharacterSheet("Lady Violent", "Physical DPS", "Punch a dragon in the face.", "assets/monk.jpeg");
+const ladyviolent = new CharacterSheet("NAME: Lady Violent", "ROLE: Physical DPS", "JOB: Punch a dragon in the face.", "assets/monk.jpeg");
 
-const bobertsonmire = new CharacterSheet("Bobertsonmire", "Ranged DPS", "Black Mage.", "assets/blackmage.jpg");
+const bobertsonmire = new CharacterSheet("NAME: Bobertsonmire", "ROLE: Ranged DPS", "JOB: Black Mage.", "assets/blackmage.jpg");
 
-const tankgirl = new CharacterSheet("Tank Girl", "Tank", "Damage Sponge.", "assets/tank.jpg");
+const tankgirl = new CharacterSheet("NAME: Tank Girl", "ROLE: Tank Girl", "JOB: Damage Sponge.", "assets/tank.jpg");
 
-const cokezero = new CharacterSheet("Coke Zero", "Healer", "Rubs it better.", "assets/heals.jpg");
+const cokezero = new CharacterSheet("NAME: Coke Zero", "ROLE: Healer", "JOB: Rubs it better.", "assets/heals.jpg");

@@ -6,11 +6,15 @@
     font-weight: bold;
 }
 
+
+
 body {
-    
+
     background-image: url(assets/bg2.jpg);
     background-repeat: repeat;
     width: 95%;
+    margin-top: 1rem;
+
 
 }
 
@@ -29,15 +33,25 @@ h2 {
     text-align: center;
 }
 
-nav {
+nav ul {
     display: flex;
-    margin: 1rem;
+    margin-top: 1rem;
+    width: 100%;
 }
 
 nav ul li {
-    margin: 2rem;
-    display: inline;
-    margin: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+iframe {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 90%;
+    height: 166%;
 }
 
 table tr td {
@@ -49,7 +63,7 @@ section {
 
 }
 
-section article{
+section article {
     display: flex;
     align-items: center;
     margin: 1rem;
@@ -59,6 +73,7 @@ img {
     width: 10rem;
     height: 10rem;
     margin: 1rem;
+    object-fit: cover;
 }
 
 .drop {
@@ -69,8 +84,14 @@ img {
 
 }
 
-footer {
-    background-color: var(--red);
+footer ul li img {
     border: 2px solid black;
+    width: 3rem;
+    height: 3rem;
 }
 
+footer ul {
+    display: flex;
+
+    width: 100%;
+}
