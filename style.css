@@ -25,12 +25,50 @@ body {
     --black: black;
 }
 
-header h1 {
-    text-align: center;
+h1 {
+    animation: pulsate 2.5s infinite alternate;
 }
 
-h2 {
+@keyframes pulsate {
+    100% {
+        /* Larger blur radius */
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px rgb(128, 0, 255),
+            0 0 80px rgb(128, 0, 255),
+            0 0 90px rgb(128, 0, 255),
+            0 0 100px rgb(128, 0, 255),
+            0 0 150px rgb(128, 0, 255);
+    }
+
+    20% {
+        /* Smaller blur radius */
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px rgb(128, 0, 255),
+            0 0 45px rgb(128, 0, 255),
+            0 0 55px rgb(128, 0, 255),
+            0 0 70px rgb(128, 0, 255),
+            0 0 80px rgb(128, 0, 255),
+    }
+}
+
+h1 {
     text-align: center;
+    color: white;
+    font-size: 8rem;
+}
+
+
+
+h2 {
+
+    text-align: center;
+
 }
 
 nav ul {
@@ -74,6 +112,36 @@ img {
     height: 10rem;
     margin: 1rem;
     object-fit: cover;
+}
+
+.food {
+    width: 100%;
+    height: 100%;
+}
+
+.tv {
+    width: 96%;
+    height: 100%;
+}
+
+.live {
+    width: 96%;
+    height: 100%;
+}
+
+.larp {
+    width: 96%;
+    height: 100%;
+}
+
+.dd {
+    width: 96%;
+    height: 100%;
+}
+
+.vtm {
+    width: 80%;
+    height: 100%;
 }
 
 .drop {
