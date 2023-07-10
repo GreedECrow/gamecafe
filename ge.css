@@ -43,13 +43,16 @@ body {
     flex-direction: column;
 }
 
-.game-container {
+#game {
     display: flex;
-    margin: 20px 0;
-    padding: 5px;
+    justify-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 10px;
 }
 
-option{
+option {
     text-align: center;
 }
 
@@ -76,7 +79,7 @@ option{
 }
 
 .seat.occupied {
-    background-color: white;
+    background-color: rgb(255, 0, 0);
 }
 
 .seat:nth-of-type(3) {
@@ -128,7 +131,7 @@ option{
     margin-left: 10px;
 }
 
-small{
+small {
     text-align: center;
 }
 
